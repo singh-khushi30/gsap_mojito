@@ -8,7 +8,7 @@ const NavBar = () => {
         const navTween = gsap.timeline({
             scrollTrigger: {
                 trigger: 'nav',
-                start: 'botom top'
+                start: 'bottom top'
             }
         })
 
@@ -29,14 +29,14 @@ const NavBar = () => {
         <nav>
         <div>
             <a href="#home" className='flex items-center gap-2'>
-                <img src="/images/logo.png" al="logo" />
+                <img src="/images/logo.png" alt="logo" />
                 <p>Buzzimation</p>
             </a>
 
             <ul>
                 {navLinks.map((link) => (
                     <li key={link.id}>
-                        <a href={`#{link.id}`}>{link.title}</a>
+                        <a href={`#${link.id}`}>{link.title}</a>
                     </li>
                 ))}
                 
